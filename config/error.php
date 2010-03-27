@@ -4,8 +4,8 @@ return array
 (
 	// EMAIL SETTINGS
 	'email'    => array(
-		'to'          => 'jeremy@synapsestudios.com',
-		'from'        => 'dev@synapsestudios.com',
+		'to'          => 'dev@synapsestudios.com',
+		'from'        => array('error@synapsestudios.com', 'ERROR!'),
 	),
 
 	// ERROR HANDLING SETTINGS
@@ -72,5 +72,4 @@ return array
 //			),
 		),
 	),
-
 );
