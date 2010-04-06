@@ -20,5 +20,5 @@ configuration settings for specific types of errors or exceptions.
 
 ## Installation
 
-1. Add the following lines to bootstrap.php before the call to Kohana::init()
+1. Add the following lines to bootstrap.php before the call to Kohana::init()  
     register_shutdown_function(function(){Error::shutdown_handler();});
