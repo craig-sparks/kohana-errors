@@ -4,8 +4,8 @@ return array
 (
 	// EMAIL SETTINGS
 	'email'    => array(
-		'to'          => 'jeremy@synapsestudios.com',
-		'from'        => 'dev@synapsestudios.com',
+		'to'          => 'dev@synapsestudios.com',
+		'from'        => array('error@synapsestudios.com', 'ERROR!'),
 	),
 
 	// ERROR HANDLING SETTINGS
@@ -26,7 +26,7 @@ return array
 		 * no email will be sent. If it is a string, then the string will
 		 * be treated as a path to a view which will replace the default email.
 		 */
-		'email'  => TRUE,
+		'email'  => FALSE,
 
 		/**
 		 * ACTION
@@ -72,5 +72,4 @@ return array
 //			),
 		),
 	),
-
 );

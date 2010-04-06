@@ -140,9 +140,10 @@ class Error {
 	 */
 	public function config($key, $default = NULL)
 	{
-		$config = Kohana::config('error.'.$this->type.'.'.$key);
-		$config = $config ? $config : Kohana::config('error._default.'.$key);
-		return $config ? $config : $default;
+		$config = Kohana::config('error.'.$this->type.':'.$this->code.'.'.$key);
+		$config = ! is_null($config) ? $config : Kohana::config('error.'.$this->type.'.'.$key);
+		$config = ! is_null($config) ? $config : Kohana::config('error._default.'.$key);
+		return ! is_null($config) ? $config : $default;
 	}
 
 	/**
