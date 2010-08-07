@@ -9,5 +9,5 @@ set_exception_handler(array('Error', 'handler'));
  * ADD THE FOLLOWING LINES TO THE BOOTSTRAP BEFORE THE CALL TO Kohana::init()
  * -----------------------------------------------------------------------------
  * // Register the Error module's shutdown function before Kohana's
- * register_shutdown_function(function(){Error::shutdown_handler();});
+ * register_shutdown_function(function(){if(is_callable('Error::shutdown_handler')){Error::shutdown_handler();}});
  */
