@@ -4,7 +4,7 @@
 
 - **Module Version:** 0.9.0
 - **Module URL:** <http://github.com/synapsestudios/kohana-errors>
-- **Compatible Kohana Version(s):** 3.0
+- **Compatible Kohana Version(s):** 3.0.x
 
 ## Description
 
@@ -16,7 +16,6 @@ configuration settings for specific types of errors or exceptions.
 ## Requirements
 
 - [Email Module](http://github.com/synapsestudios/kohana-email)
-- PHP 5.3+
 
 ## Installation
 
