@@ -35,35 +35,37 @@ return array(
 		 * action will be taken with the options specified.
 		 */
 		'action' => array(
-// -----------------------------------------------------------------------------
-// EXAMPLE: "display"
-// -----------------------------------------------------------------------------
-//			'type'    => 'display',
-//			'options' => array(
-//				// View used to replace the default error display
-//				'view'  => 'errors/_default',
-//			),
-
-// -----------------------------------------------------------------------------
-// EXAMPLE: "callback"
-// -----------------------------------------------------------------------------
-//			'type'    => 'callback',
-//			'options' => array(
-//				// Callback to apply to the error (uses `Arr::callback` syntax)
-//				'callback' => 'Error::demo_callback',
-//			),
-
-// -----------------------------------------------------------------------------
-// EXAMPLE: "redirect"
-// -----------------------------------------------------------------------------
-//			'type'    => 'redirect',
-//			'options' => array(
-//				// This is where the user will be redirected to
-//				'url'     => 'welcome/index',
-//
-//				// The message to be sent as a Notice (requires Notices module)
-//				'message' => 'There was an error which prevented the page you requested from being loaded.',
-//			),
+			/**
+			 * EXAMPLE: "display"
+			 *
+			 * 'type'    => 'display',
+			 * 'options' => array(
+			 * 		// View used to replace the default error display
+			 * 		'view'  => 'errors/_default',
+			 * ),
+			 */
+			
+			/**
+			 * EXAMPLE: "callback"
+			 *
+			 * 'type'    => 'callback',
+			 * 'options' => array(
+			 * 		// Callback to apply to the error (uses `Arr::callback` syntax)
+			 * 		'callback' => 'Error::demo_callback',
+			 * ),
+			 */
+			
+			/**
+			 * EXAMPLE: "redirect"
+			 *
+			 * 'type'    => 'redirect',
+			 * 'options' => array(
+			 * 		// This is where the user will be redirected to
+			 * 		'url'     => 'welcome/index',
+			 * 		// The message to be sent as a Notice (requires Notices module)
+			 * 		'message' => 'There was an error which prevented the page you requested from being loaded.',
+			 * ),
+			*/
 		),
 	),
 );
