@@ -35,7 +35,7 @@ class Kohana_Error {
 			$error->line    = $e->getLine();
 
 			// Create a text version of the exception
-			$error->text = Kohana::exception_text($e);
+			$error->text = Kohana_Exception::text($e);
 
 			if (Kohana::$is_cli)
 			{
@@ -87,7 +87,7 @@ class Kohana_Error {
 			$error->log();
 
 			// Email the error
-			if ($this->config('email'))
+			if ($error->config('email'))
 			{
 				$error->email();
 			}
@@ -230,7 +230,7 @@ class Kohana_Error {
 		if ($this->config('log', TRUE) AND is_object(Kohana::$log))
 		{
 			// Add this exception to the log
-			Kohana::$log->add(Kohana::ERROR, $this->text);
+			Kohana::$log->add(Log::ERROR, $this->text);
 
 			// Make sure the logs are written
 			Kohana::$log->write();
