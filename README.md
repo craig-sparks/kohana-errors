@@ -4,7 +4,7 @@
 
 - **Module Version:** 0.9.0
 - **Module URL:** <http://github.com/synapsestudios/kohana-errors>
-- **Compatible Kohana Version(s):** 3.0.x
+- **Compatible Kohana Version(s):** 3.1.x
 
 ## Description
 
