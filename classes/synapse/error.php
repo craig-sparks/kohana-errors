@@ -1,6 +1,6 @@
 <?php
 
-class Kohana_Error {
+class Synapse_Error {
 
 	public $type    = NULL;
 	public $code    = NULL;
